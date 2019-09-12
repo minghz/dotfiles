@@ -28,4 +28,7 @@ export NVM_DIR="$HOME/.nvm"
 
 source ~/dotfiles/functions.sh
 source ~/dotfiles/aliases.sh
-source ~/dotfiles/cover.sh
+
+if [ -f ~/dotfiles/cover.sh ]; then
+  source ~/dotfiles/cover.sh
+fi
