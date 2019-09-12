@@ -13,6 +13,7 @@ alias m='more'
 ### vim ###
 alias v='vim'
 alias g='gvim'
+alias n='nvim'
 set -o vi
 
 ### docker ###

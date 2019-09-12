@@ -1,7 +1,3 @@
-source ~/dotfiles/functions.sh
-source ~/dotfiles/aliases.sh
-source ~/dotfiles/cover.sh
-
 # fzf and ripgrep keybindings
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -29,3 +25,7 @@ if [ -f '/Users/mzhao/dev/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
+source ~/dotfiles/functions.sh
+source ~/dotfiles/aliases.sh
+source ~/dotfiles/cover.sh
