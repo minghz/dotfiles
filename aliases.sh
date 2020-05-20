@@ -23,6 +23,7 @@ alias db='docker_bash'
 ### git ###
 alias gb='git branch'
 alias go='git checkout'
+alias gs='git status'
 alias grb='git_remove_gone_branches'
 alias gdb='git_diff_branches'
 
