@@ -5,7 +5,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # vim commands
 export PATH="/Applications/MacVim.app/Contents/bin:$PATH"
-export EDITOR=vim
+export EDITOR=nvim
 
 # Environment
 # rbenv
