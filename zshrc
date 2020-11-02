@@ -29,3 +29,7 @@ set -o vi
 
 source ~/dotfiles/functions.sh
 source ~/dotfiles/aliases.sh
+
+if [ -f ~/dotfiles/square.sh ]; then
+  source ~/dotfiles/square.sh
+fi
