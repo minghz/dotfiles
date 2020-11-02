@@ -6,7 +6,7 @@ Organized into a nice little tidbit of here and there scripts
 cd ~
 git clone https://github.com/minghz/dotfiles.git
 mv .bashrc .bashrc.bk # backing up your existing bashrc
-ln -s dotfiles/.bashrc .
+ln -s dotfiles/bashrc .bashrc
 ```
 
 ## Instalation on zsh
@@ -14,7 +14,7 @@ ln -s dotfiles/.bashrc .
 cd ~
 git clone https://github.com/minghz/dotfiles.git
 mv .zshrc .zshrc.bk # backing up your existing zshrc
-ln -s dotfiles/.zshrc .
+ln -s dotfiles/zshrc .zshrc
 ```
 
 ## Instalation on .oh-my-zsh
@@ -22,7 +22,7 @@ ln -s dotfiles/.zshrc .
 cd ~
 git clone https://github.com/minghz/dotfiles.git
 cd ~/.oh-my-zsh/custom/
-ln -s ~/dotfiles/.zshrc custom_zshrc.zsh
+ln -s ~/dotfiles/zshrc custom_zshrc.zsh
 ```
 Slight modification on tonotdo theme
 ```

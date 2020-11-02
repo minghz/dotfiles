@@ -14,7 +14,6 @@ alias m='more'
 alias v='vim'
 alias g='gvim'
 alias n='nvim'
-set -o vi
 
 ### docker ###
 alias dc='docker-compose'
@@ -22,7 +21,7 @@ alias db='docker_bash'
 
 ### git ###
 alias gb='git branch'
-alias go='git checkout'
+alias gch='git checkout'
 alias gs='git status'
 alias grb='git_remove_gone_branches'
 alias gdb='git_diff_branches'

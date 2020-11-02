@@ -33,6 +33,6 @@ export EDITOR=vim
 source ~/dotfiles/functions.sh
 source ~/dotfiles/aliases.sh
 
-if [ -f ~/dotfiles/cover.sh ]; then
-  source ~/dotfiles/cover.sh
+if [ -f ~/dotfiles/square.sh ]; then
+  source ~/dotfiles/square.sh
 fi
