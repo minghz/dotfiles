@@ -8,6 +8,9 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export EDITOR=nvim
 set -o vi
 
+# Adding timestamp to prompt on right-hand side
+RPROMPT='%{$fg[yellow]%}[%D{%H:%M:%S}]%{$reset_color%}'
+
 # Environment
 # rbenv
 # export PATH="$HOME/.rbenv/bin:$PATH"
