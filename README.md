@@ -17,6 +17,8 @@ mv .zshrc .zshrc.bk # backing up your existing zshrc
 ln -s dotfiles/zshrc .zshrc
 ```
 
+---
+#(Removed zsh support)
 ## Instalation on .oh-my-zsh
 ```
 cd ~
