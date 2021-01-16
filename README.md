@@ -18,7 +18,7 @@ ln -s dotfiles/zshrc .zshrc
 ```
 
 ---
-#(Removed zsh support)
+# (Removed zsh support)
 ## Instalation on .oh-my-zsh
 ```
 cd ~
