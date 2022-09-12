@@ -17,6 +17,15 @@ PROMPT='%F{yellow}%~%F{green}($(git_current_branch))%f\$ '
 # Adding timestamp to prompt on right-havcs_info_wrappernd side
 RPROMPT='%F{blue}[%D{%H:%M:%S}]'
 
+function git_prompt_info {
+  local ref=$(git symbolic-ref HEAD 2> /dev/null)
+  if [[ -n $ref ]]; then
+    echo "${PR_CYAN}(${ref#refs/heads/}$remote$state${PR_CYAN})${PR_WHITE}"
+  fi
+}
+
+export PS1='${SSH_CONNECTION+"%{$fg_bold[cyan]%}%n@%m:"}%{$fg_bold[green]%}%~%{$reset_color%}$(git_prompt_info):%? '
+
 # Environment
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"

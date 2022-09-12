@@ -40,7 +40,7 @@ function gla {
 
   git log --all --graph --pretty=tformat:"$HASH  $DATE  $NAME  $MESG  $REFS"
 }
-function gl {
+function gl() {
   TOTAL_COL=$(tput cols)
   HASH_COL_END=20
   DATE_COL_END=32

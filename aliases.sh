@@ -25,6 +25,7 @@ alias gch='git checkout'
 alias gs='git status'
 alias grb='git_remove_gone_branches'
 alias gdb='git_diff_branches'
+alias gl='gl'
 
 # rails
 alias rt='rails test'

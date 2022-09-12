@@ -9,7 +9,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #bind -x '"\C-p": gvim $(fzf);'
 
 ### Prompt styling ###
-RED="\[\033[0;31m\]"
 YELLOW="\[\e[0;33m\]"
 GREEN="\[\e[0;32m\]"
 RED="\[\e[31m\]"
