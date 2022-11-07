@@ -47,10 +47,3 @@ function docker_bash {
   CONTAINER_ID=`docker ps | grep $1 |awk {'print $1'}`
   docker exec -it $CONTAINER_ID bash -c "stty cols $COLUMNS rows $LINES && bash";
 }
-function therapia_server {
-  REDIS_DIR=/home/mzhao/dev/redis-4.0.2/
-  TH_DIR=/home/mzhao/dev/therapia/
-  gnome-terminal --tab --working-directory=$REDIS_DIR --command="./src/redis-server" \
-    --tab --working-directory=$TH_DIR --command="bin/server" \
-    --tab --working-directory=$TH_DIR --command="bundle exec sidekiq"
-}

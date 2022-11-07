@@ -3,6 +3,9 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+source ~/dotfiles/functions.sh
+source ~/dotfiles/aliases.sh
+
 # fzf and ripgrep keybindings
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -29,9 +32,9 @@ export BACKTRACE='yes'
 export PATH="/Applications/MacVim.app/Contents/bin:$PATH"
 export EDITOR=vim
 
-source ~/dotfiles/functions.sh
-source ~/dotfiles/aliases.sh
 
+# Below imports company-specific configs.
+# Add them to .gitignore to protect company IP
 if [ -f ~/dotfiles/square.sh ]; then
   source ~/dotfiles/square.sh
 fi

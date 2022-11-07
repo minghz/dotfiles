@@ -6,12 +6,15 @@ export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS='-m --height 50% --border' # appearance
 
-# vim commands
-# export PATH="/Applications/MacVim.app/Contents/bin:$PATH"
-export EDITOR=nvim
-set -o vi
+## Vim editor
 
-# Install pure prompt
+# For MavVim
+# export PATH="/Applications/MacVim.app/Contents/bin:$PATH"
+
+export EDITOR=nvim # For nvim
+set -o vi # enable vi commands on cli
+
+# Install `pure` CLI prompt
 # https://github.com/sindresorhus/pure
 autoload -U promptinit; promptinit
 prompt pure
@@ -29,6 +32,8 @@ export BACKTRACE='yes'
 # [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 # [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
+# Below imports company-specific configs.
+# Add them to .gitignore to protect company IP
 if [ -f ~/dotfiles/square.sh ]; then
   source ~/dotfiles/square.sh
 fi
