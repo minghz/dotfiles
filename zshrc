@@ -1,4 +1,6 @@
 source ~/dotfiles/functions.sh
+source ~/dotfiles/git_helpers.sh
+source ~/dotfiles/git_helpers_batch.sh
 source ~/dotfiles/aliases.sh
 
 # fzf and ripgrep keybindings
