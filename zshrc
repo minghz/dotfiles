@@ -1,5 +1,7 @@
-source ~/dotfiles/functions.sh
 source ~/dotfiles/aliases.sh
+source ~/dotfiles/functions.sh
+source ~/dotfiles/git_helpers.sh
+source ~/dotfiles/git_helpers_batch.sh
 
 # fzf and ripgrep keybindings
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
