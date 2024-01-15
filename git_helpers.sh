@@ -10,6 +10,9 @@ function git_remove_gone_branches {
 function git_diff_branches {
   git diff --stat --color $1..$(git_current_branch)
 }
+function git_prune {
+  git remote prune origin
+}
 
 # Nice git logs
 function gl() {
