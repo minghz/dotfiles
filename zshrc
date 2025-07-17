@@ -13,7 +13,7 @@ export FZF_DEFAULT_OPTS='-m --height 50% --border' # appearance
 # For MavVim
 # export PATH="/Applications/MacVim.app/Contents/bin:$PATH"
 
-export EDITOR=nvim # For nvim
+export EDITOR=vim # For nvim
 set -o vi # enable vi commands on cli
 
 # Install `pure` CLI prompt
